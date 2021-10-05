@@ -11,7 +11,7 @@
     <body>
 
         <header class="mb-2">
-            <div class="container-lg">
+            <div class="container">
                 <div class="row">
                 <div class = "col"><img src="logo.jpeg" class = "img-fluid"  alt="logo"></div>
                 <div class = "col"><div class="display-4"><p class="text-start">Название Сайта <p></div></div>
@@ -19,14 +19,17 @@
             </div>
         </header>
 
-        <nav class="menu">
-            <ul>
-            <li><a href="#ref">  Список </a></li>
-            <li><a href="#ref2"> Форма </a></li>
-            <li><a href="#ref3"> Таблица </a></li>
+        <nav>
+            <ul class="list-group list-group-horizontal justify-content-sm-center text-center">
+            <li class="list-group-item"><a href="#ref">  Список </a></li>
+            <li class="list-group-item"><a href="#ref2"> Форма </a></li>
+            <li class="list-group-item"><a href="#ref3"> Таблица </a></li>
             </ul>
         </nav>
 
+        <section class="m-2">
+        <div class="container-lg">
+            <div class="container__row d-flex flex-column">
         <h1 id="ref">Список</h1>
         <ol>
             <li><a href="http://example.com">абсолютная ссылка на example.com</a> </li>
@@ -59,10 +62,11 @@
             <li><a href ="index.html">сокращенная ссылка на главную </a></li>
             <li><a href ="/about.html">сокращенная ссылка на внутреннюю </a></li>
         </ol>
-        <div id="virodok">
-        <div class=table>
+        
+            
+        <div class="container__table p-2 mt-2 order-3 bg order-sm-2">
         <h1 id="ref3">Таблица</h1>
-        <table>
+        <table class="table table-bordered border-primary">
 
             <tr>
             <th>Колонка1</th>
@@ -94,9 +98,9 @@
 
         </table></div>
 
-        <div class=form>
+        <div class="container__form p-2 mt-2 order-2 order-sm-3">
         <h1 id="ref2">Форма</h1>
-        <form action="/" method="POST" class=Form1>
+        <form action="/" method="POST">
             <label>
             Имя<br />
             <input name="name1"
@@ -146,14 +150,14 @@
                 <textarea name="field2">писать тут</textarea>
               </label><br />
 
-              <label><input type="checkbox" checked="checked"
-                name="check-1" />
+              <label><input type="checkbox" checked="checked" name="check-1" />
                 На сайт не смотрел (а)</label><br />
 
             <button formaction="index.html">Отправить</button>
-            </form></div> </div>
-
-            <footer class="footer_text"> Sinica privet</footer>
+            </form></div> 
+        </div></div>
+    </section>
+            <footer class="text-end"> ©Sinica privet</footer>
         </body>
 
  </html>
